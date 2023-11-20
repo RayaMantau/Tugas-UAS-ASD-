@@ -48,10 +48,15 @@ void ubahstok() {
 
         for (int i = 0; i < banyakproduk; i++) {
             if (produk[i].nama == nmp) {
-                int banyak;
+                int banyak, price;
+                cout << "Input Jika Menambahkan,, Tambahkan - Untuk Mengurangi" << endl;
+                cout << "Input 0 Jika Tidak Ingin Mengubah" << endl;
                 cout << "Ubah Jumlah Barang : ";
                 cin >> banyak;
                 produk[i].stok += banyak;
+                cout << "Ubah Harga Barang : ";
+                cin >> price;
+                produk[i].harga += price;
                 cout << "Stok sudah diubah" << endl;
                 return;
             }
