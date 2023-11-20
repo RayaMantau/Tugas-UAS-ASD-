@@ -54,11 +54,11 @@ void ubahstok() {
                 produk[i].stok += banyak;
                 cout << "Stok sudah diubah" << endl;
                 return;
-            }else{
-                cout << "Produk tidak ditemukan. " << endl;
             }
         }
-    }
+    }else{
+                cout << "Produk tidak ditemukan. " << endl;
+       }
 }
 
 void lihatstok() {
